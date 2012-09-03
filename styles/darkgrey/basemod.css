@@ -1,0 +1,66 @@
+/**
+ * "Yet Another Multicolumn Layout" - (X)HTML/CSS framework
+ * (en) stylesheet for screen layout
+ * (de) Stylesheet f¨¹r das Bildschirm-Layout
+ *
+ * @creator       YAML Builder V1.2.1 (http://builder.yaml.de)
+ * @file          basemod.css
+ * @-yaml-minver  3.3
+ */
+
+@media screen, projection
+{
+  /** 
+   * (en) Forcing vertical scrollbars in IE8, Firefox, Webkit & Opera 
+   * (de) Erzwingen vertikaler Scrollbalken in IE8, Firefox, Webkit & Opera 
+   *
+   * @workaround
+   * @affected IE8, FF, Webkit, Opera
+   * @css-for all
+   * @valid CSS3
+   */
+
+
+thead tr .headerSortUp {
+    background-image: url(images/asc.gif);
+}
+thead tr .headerSortDown {
+    background-image: url(images/desc.gif);
+}
+
+thead tr .headerSortDown, thead tr .headerSortUp {
+    background-color: #8195BA;
+}
+
+thead tr .header {
+    background-position: right center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+form {
+    display: inline;
+}
+
+.header, .formheader, .headertwo {
+    text-align: center;
+}
+
+tr.even
+{
+    background-color: #EFF4F9;
+}
+tr.odd,.oddrow {
+    background-color: #E3ECF5;
+}
+
+h3[id] {
+    border-bottom: 1px solid #AA1124;
+}
+
+h3 {
+    font-size: 150%;
+    line-height: 2.0em;
+}
+
+}

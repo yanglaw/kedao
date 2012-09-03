@@ -1,0 +1,10 @@
+.project
+/upload/surveys/*
+/styles/gringegreen/images/Thumbs.db
+/upload/templates/*
+
+/tmp/runtime/HTML
+
+/upload/*
+/tmp/*
+/.settings/*
