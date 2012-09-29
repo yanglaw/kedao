@@ -1,12 +1,8 @@
-<form method='post' action='<?php echo $this->createUrl("admin/user/userrights");?>'>
-
-<table width='100%' border='0'>
-<tr>
-<td colspan='8' class='header ui-widget-header' align='center'>
-<?php $clang->eT("Set User Rights");?>:<?php echo htmlspecialchars(sanitize_user($_POST['user']));?>
-</td>
-</tr>
-
+<section class="full">
+	<h3><?php $clang->eT("Set User Rights");?></h3>
+	<form method='post' action='<?php echo $this->createUrl("admin/user/userrights");?>'>
+		<fieldset>
+			<legend><?php echo htmlspecialchars(sanitize_user($_POST['user']));?></legend>
 <?php // HERE WE LIST FOR USER RIGHTS YOU CAN SET TO a USER
 // YOU CAN ONLY SET AT MOST THE RIGHTS YOU have yourself
 $userlist = getUserList();
@@ -116,14 +112,16 @@ foreach ($userlist as $usr) {
 
         <tr>
         <td colspan='7' align='center'>
-        <input type='submit' value='<?php $clang->eT("Save Now");?>' />
-        <input type='hidden' name='action' value='userrights' />
-        <input type='hidden' name='uid' value='<?php echo $postuserid;?>' />
-        </td>
-        </tr>
-        </table>
-        </form>
+
+
+
         <?php continue;
     }	// if
 }	// foreach
 ?>
+		<input type='submit' class='btn btn-green' value='<?php $clang->eT("Save Now");?>' />
+        <input type='hidden' name='action' value='userrights' />
+        <input type='hidden' name='uid' value='<?php echo $postuserid;?>' />
+    </fieldset>
+	</form>
+</section>

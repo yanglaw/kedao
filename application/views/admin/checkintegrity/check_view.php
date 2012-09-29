@@ -1,8 +1,8 @@
-<div><h3 id="Survey Datacheck"><?php $clang->eT("Data consistency check"); ?></h3>
-	<div class="box warning"><?php $clang->eT("If errors are showing up you might have to execute this script repeatedly."); ?></div>
-</div>
-<section class="box info">
-	<div>
+<section class="column first">
+	<h3 id="Survey Datacheck"><?php $clang->eT("Data consistency check"); ?></h3>
+	<hr/>
+	<div class="box box-info"><?php $clang->eT("If errors are showing up you might have to execute this script repeatedly."); ?></div>
+	<div class="width8">
     <ul>
         <?php
             // TMSW Conditions->Relevance:  Update this to use relevance processing results
@@ -216,13 +216,11 @@
         <?php
     } ?>
     </div>
-</section><br />
-
-<div><h3 id="Survey Datacheck"><?php $clang->eT("Data redundancy check"); ?></h3>
-	<div class="box warning"><?php $clang->eT("The redundancy check looks for tables leftover after deactivating a survey. You can delete these if you no longer require them."); ?></div>
-</div>
-<section class="box info">
-	<div>
+	<div class="clear">&nbsp;</div>
+	<h3><?php $clang->eT("Data redundancy check"); ?></h3>
+	<hr/>
+	<div class="box box-info"><?php $clang->eT("The redundancy check looks for tables leftover after deactivating a survey. You can delete these if you no longer require them."); ?></div>
+	<div class="width8">
     <?php if ($redundancyok) { ?>
         <br /> <?php $clang->eT("No database action required!"); ?>
         <?php } else
@@ -263,4 +261,5 @@
         </form><?php
     } ?>
 	</div>
+	<div class="clear">&nbsp;</div>
 </section>

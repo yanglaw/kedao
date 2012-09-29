@@ -1,6 +1,6 @@
-<div class='messagebox ui-corner-all'>
-	<div class='<?php echo $class;?>'>
-		<?php echo $title;?>
-	</div>
+<p class='<?php echo $class;?>'>
+	<?php echo $title;?>
+</p>
+<p>
 	<?php echo $message;?>
-</div>
+</p>

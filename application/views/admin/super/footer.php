@@ -1,4 +1,4 @@
-    <div class="push"></div>
+    </div>
 </div>
 <!-- 
 	Comments by yanglaw for being instead of
@@ -13,14 +13,16 @@
 </div>
  -->
      <!-- begin: #footer -->
-	<footer>
-		<div class="ym-wrapper">
-			<div class="ym-wbox">
-				<p>Copyright QinSiCheng Information Services Co. LTD</p>
-			</div>
+	<footer id="bottom">
+		<div class="wrapper">
+			<nav></nav>
+			<p>Copyright QinSiCheng Information Services Co. LTD</p>
 		</div>
 	</footer>
+	<a href="#" id="totop">scroll to top</a>
+	<script type="text/javascript" src="<?php echo Yii::app()->getConfig('generalscripts');?>windblue/administry.js"></script>
 	<!-- end: #footer -->
+<!-- 
 <?php
     if(!empty($js_admin_includes))
     {
@@ -40,5 +42,6 @@
         }
     }
 ?>
+ -->
 </body>
 </html>
